@@ -1,0 +1,22 @@
+html {
+    background-color: aqua;
+}
+
+body {
+    background-color: darkgray;
+}
+
+h1 {
+    font-family: Elephant;
+    color: azure;
+    text-align: center;
+}
+
+
+.nav li {
+    text-align: center;
+}
+
+.nav li:hover {
+    background-color: azure;
+}
