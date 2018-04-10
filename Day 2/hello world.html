@@ -19,12 +19,32 @@ function addage() {
     window.alert(person.age = person.age + 1);
 }
 
+var person1 = {
+
+    name1: document.getElementById("firstname").value
+
+}
+
+function currentname() {
+
+    window.alert (person.name);
+}
+
+function newpersonname() {
+
+    window.alert (person1.name1);
+}
+
 </script>
 </head>
 
 <body>
 <input type="button" onclick="addage()" value="add age"/>
 <input type="button" onclick="currentage()" value="current age"/>
+Change Name: <input type="text" id="firstname1"/>
+<input type="submit" value="Submit" onclick="formdata()"/>
+<input type="button" onclick="currentname()" value="current name"/>
+<input type="button" onclick="newpersonname()" value="display new person name"/>
 </body>
 
 
