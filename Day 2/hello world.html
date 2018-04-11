@@ -19,33 +19,57 @@ function addage() {
     window.alert(person.age = person.age + 1);
 }
 
-var person1 = {
+function makename() {
 
-    name1: document.getElementById("firstname").value
+    newperson.name = document.getElementById("firstname").value;
+    newperson.age = document.getElementById("age").value;
+    newperson.occupation = document.getElementById("occupation").value;
 
 }
 
-function currentname() {
+var newperson = {
 
-    window.alert (person.name);
+    name: "",
+    age: "",
+    occupation: "",
 }
 
-function newpersonname() {
-
-    window.alert (person1.name1);
+function newname() {
+    var a = "Name: " + newperson.name + " Age: " + newperson.age + " Occupation: " + newperson.occupation
+    window.alert(a);
 }
+
+function conditional1() {
+
+    if ((newperson.age > 20) && (newperson.age < 40)) {
+        window.alert(true)
+    }
+    else {
+        window.alert(false)
+    }
+}
+
+
+
 
 </script>
 </head>
 
 <body>
-<input type="button" onclick="addage()" value="add age"/>
-<input type="button" onclick="currentage()" value="current age"/>
-Change Name: <input type="text" id="firstname1"/>
-<input type="submit" value="Submit" onclick="formdata()"/>
-<input type="button" onclick="currentname()" value="current name"/>
-<input type="button" onclick="newpersonname()" value="display new person name"/>
-</body>
+<input type="button" onclick="addage();" value="add age"/>
+<input type="button" onclick="currentage();" value="current age"/>
 
+<form>
+    <br>
+    Enter new person name: <input type="text" id="firstname"/>
+    Enter new person age: <input type="text" id="age"/>
+    Enter new person occupation: <input type="text" id="occupation"/>
+    <br><input type="button" value="Submit" onclick="makename();"/><br>
+    <br>
+</form>
+<input type="button" onclick="newname();" value="Create name"/>
+<input type="button" onclick="conditional1();" value="Check if 20<age<40"/>
+
+</body>
 
 </html>
